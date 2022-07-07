@@ -6,9 +6,10 @@ const todosSlice = createSlice({
     entities: [], // array of todos
   },
   reducers: {
-    todoAdded(state, action) {
-      // update meeee
+    todoAdded(state, action) {      
+        state.entities.push(action.payload)      
     },
+    
   },
 });
 
